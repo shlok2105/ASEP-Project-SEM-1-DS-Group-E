@@ -1,0 +1,25 @@
+food,calories,protien,carb,fat
+egg(1),78,6,0.6,5
+milk(1cup),150,8,12,8
+curd(1cup),98,11,3.4,4.3
+paneer(100g),265,18,6,20
+chicken breast(100g),165,18,6,20
+fish(100g),190,22,0,10
+dal(1bowl),180,12,25,3
+rajma(1bowl),215,15,35,1.5
+chole(1bowl),280,12,30,8
+rice(1cup),200,4,18,3.5
+bread(2slices),140,5,25,2
+oats(1 cup cooked),154,6,27,3
+poha(1 plate),250,5,35,8
+upma(1plate),240,6,32,8
+idli(1),133,2.7,11,0.2
+dosa(1),133,2.7,18,5.8
+chapati(1),120,3,18,3.5
+paratha(1),260,4,38,10
+banana(1),105,1.3,27,0.3
+apple(1),95,0.3,25,0.2
+orange(1),62,1.2,15,0.2
+grapes(1cup),104,1,27,0.3
+mango(1),135,1,35,0.6
+almonds(10pcs),70,2.6,2.5,6
