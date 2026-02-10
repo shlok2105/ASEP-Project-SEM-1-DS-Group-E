@@ -1,6 +1,6 @@
 #Taking input from user.
 gender = str(input("What's your gender : "))
-age = float(input("How old are you : "))
+age = int(input("How old are you : "))
 weight = float(input("Enter your weight(KG) : "))
 height = float(input("Enter your height(m) : "))
 print("\nchoose you goal")   #asking user whats their goal.
@@ -82,7 +82,7 @@ def calculations(tdee,user_goal,goal_dataframes):
     return calories_required, protien_grams, carb_grams, fat_grams
 
 
-from data_loader import goal_dataframes      #this is for taking data from data loader file.
+from model_loader import goal_dataframes      #this is for taking data from data loader file.
 
 
 total_required_calories = calculations(tdee,user_goal,goal_dataframes)    
@@ -92,6 +92,12 @@ print(f"\nTotal calories required per day to {user_goal} : {round(cal)} kcal")
 print(f"Total grams of protien required per day to {user_goal} : {round(protien_g)} g")
 print(f"Total grams of carb required per day to {user_goal} : {round(carb_g)} g")
 print(f"Total grams of fat required per day to {user_goal} : {round(fat_g)} g")
+from model_loader import text_generate
+
+user_prompt = "create a 7 days workout and diet plan acording to thier health condition"
+output = text_generate(user_prompt, max_length = 1000, do_sample = True, temperature = 0.7)
+plan_text = output[0]["generated_text"]
+print(plan_text)
 
 
 
